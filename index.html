@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>ถึงแฟนเก่าคนโปรด</title>
+
+  <!-- Optional cute Thai font. If offline, the page falls back to the system Thai font. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page" id="page">
+    <!-- tiny pastel dots & hearts (generated in script.js) -->
+    <div class="deco" id="deco" aria-hidden="true"></div>
+
+    <section class="card" id="card">
+      <div class="card-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+
+      <header class="head" id="head">
+        <h1>ถึงแฟนเก่าคนโปรด</h1>
+        <p class="ask">ปีนี้ลอยกระทงด้วยกันไหม?</p>
+        <span class="ask-heart" aria-hidden="true">♡</span>
+      </header>
+
+      <div class="stage" id="stage">
+        <i class="stage-deco s1" aria-hidden="true"></i>
+        <i class="stage-deco s2" aria-hidden="true"></i>
+        <i class="stage-deco s3" aria-hidden="true"></i>
+
+        <div class="cat" id="cat" data-kind="krathong">
+          <img id="catImg" src="assets/cat-krathong-smooth.gif" alt="แมวน้อยถือกระทง" draggable="false">
+        </div>
+
+        <div class="hearts" id="hearts" aria-hidden="true"></div>
+      </div>
+
+      <p class="caption" id="caption" aria-live="polite">รอคำตอบอยู่นะ…</p>
+
+      <div class="message" id="message" hidden>
+        <strong>เย้! ดีใจมากเลย <span class="heart-glyph">♡</span></strong>
+        <span>แล้วเจอกันวันลอยกระทงนะ</span>
+      </div>
+
+      <div class="actions" id="actions">
+        <button class="btn btn-go" id="goBtn" type="button">ไป <span class="heart-glyph">♡</span></button>
+        <div class="no-slot" id="noSlot">
+          <button class="btn btn-no" id="noBtn" type="button">ไม่ไป</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- effects layer: reticle, muzzle flash, toy bullet, fragments -->
+  <div class="fx" id="fx" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
