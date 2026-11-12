@@ -29,9 +29,9 @@
   };
 
   const SRC = {
-    krathong: 'cat-krathong-smooth.gif',
-    gun: 'cat-toy-gun-smooth.gif',
-    happy: 'cat-happy-smooth.gif',
+    krathong: 'assets/cat-krathong-smooth.gif',
+    gun: 'assets/cat-toy-gun-smooth.gif',
+    happy: 'assets/cat-happy-smooth.gif',
   };
   const ALT = {
     krathong: 'แมวน้อยถือกระทง',
